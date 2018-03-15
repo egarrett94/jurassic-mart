@@ -13,7 +13,6 @@ const Products = () => {
 			<div class='row'>	
 				<IndivProduct />
 			</div>
-
 		</div>
 	)
 
