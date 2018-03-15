@@ -15,6 +15,7 @@ import Products from './Products';
 import Cart from './Cart';
 import Checkout from './Checkout';
 
+
 class App extends Component {
 
 	constructor(props) {
@@ -73,6 +74,7 @@ class App extends Component {
 
 
 		return(
+
 			<Router>
 				<div>
 					<Nav />
@@ -85,6 +87,7 @@ class App extends Component {
 				    </div>
 				</div>
 			</Router>
+
 		)
 
 
