@@ -4,6 +4,8 @@ import Login from './Login.js';
 import UserProfile from './UserProfile.js';
 import axios from 'axios';
 import './App.css';
+import Home from "./Home";
+import Products from "./Products";
 
 class App extends Component {
 
@@ -36,7 +38,7 @@ class App extends Component {
 	componentDidMount() {
 		//immediately sets token to mernToken if there is one there
 		var token = localStorage.getItem('mernToken')
-		//checks to see if something got fucked with the token 
+		//checks to see if something got fucked with the token
 		//and if it did, it resets the state.token to blank
 		//if it's a valid thing, it'll create it. and reset the localStorage
 		if (token === 'undefined' || token === null || token === '' || token === undefined ){
@@ -60,25 +62,29 @@ class App extends Component {
 	}
 
 	render() {
-
-		let theUser = this.state.user
-		//if the type of theUser is an object and there's a length,
-		//then the user is logged in and can see the user profile + logout link. 
-		//otherwise it shows the log in / sign up link 
-		if (typeof theUser === 'object' && Object.keys(theUser).length > 0) {
-			return (
-				<div>
-					<UserProfile user={this.state.user} logout={this.logout} />
-				</div>
-			)
-		} else {
-			return (
-			  <div className="App">
-			  	<Signup liftToken={this.liftTokenToState}/>
-			  	<Login liftToken={this.liftTokenToState}/>
-			  </div>
-			)
-		}
+		return (
+			<div>
+				<Products />
+			</div>
+		)
+		// let theUser = this.state.user
+		// //if the type of theUser is an object and there's a length,
+		// //then the user is logged in and can see the user profile + logout link.
+		// //otherwise it shows the log in / sign up link
+		// if (typeof theUser === 'object' && Object.keys(theUser).length > 0) {
+		// 	return (
+		// 		<div>
+		// 			<UserProfile user={this.state.user} logout={this.logout} />
+		// 		</div>
+		// 	)
+		// } else {
+		// 	return (
+		// 	  <div className="App">
+		// 	  	<Signup liftToken={this.liftTokenToState}/>
+		// 	  	<Login liftToken={this.liftTokenToState}/>
+		// 	  </div>
+		// 	)
+		// }
 	}
 }
 
