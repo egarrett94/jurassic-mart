@@ -39,3 +39,22 @@ form {
 .card-content {
 	overflow: scroll!important;
 }
+
+.goldblum {
+	position: absolute;
+	z-index: -3;
+	right: 50px;
+	top: 55px;
+}
+
+.jurassic-mart-logo {
+	width: 150px!important;
+	height: auto;
+}
+
+.shopkeep-text {
+	padding: 20px!important;
+	border-radius: 15px;
+	background-color: rgba(255,255,255,0.5);
+	text-align: center;
+}

@@ -64,7 +64,11 @@ const Products = () => {
 		<div>
 			<div class='row'>
 				<div class='col s12 m12 l12'>
+					<br/>
 					<h1>Products</h1>
+					<br/><br/><br/>
+					<p className='shopkeep-text col s5 m5 l5 offset-s5 offset-m5 offset-l5'>Take a look at our wares.</p>
+					<img className='goldblum' src='http://i.imgur.com/jbPGt.png' />
 				</div>
 			</div>
 			<div class='row'>
