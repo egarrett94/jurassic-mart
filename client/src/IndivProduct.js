@@ -11,8 +11,9 @@ class IndivProduct extends Component {
                 <span class="card-title">{this.props.name}</span>
               </div>
               <div class="card-content">
-                <h5> Product Description: </h5>
+                <h6> Product Description: </h6>
                 <p>{this.props.desc}</p>
+                <p>Price: ${this.props.price}</p>
               </div>
               <div class="card-action">
                 <a href="#" value='{this.props.name}'>Add To Cart</a>
