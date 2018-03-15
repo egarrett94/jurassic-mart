@@ -3,10 +3,21 @@ import React from 'react';
 const IndivProduct = () => {
 
 	return(
-		<div class='col s3 m3 l3'>
-			{/*this is where the individual product population will go*/}
-			butt
-		</div>
+		
+        <div class="col s4 m4 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://www.placekitten.com/g/150/150" />
+              <span class="card-title">Kitty</span>
+            </div>
+            <div class="card-content">
+              <p>alsdfjalskdjfsldkfjalsdfkjalsdfjalskdfjlaksjdf</p>
+            </div>
+            <div class="card-action">
+              <a href="#" value='{this.props.product.name}'>Add To Cart</a>
+            </div>
+          </div>
+        </div>
 	)
 
 }
