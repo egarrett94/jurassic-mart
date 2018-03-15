@@ -71,14 +71,16 @@ class App extends Component {
 
 
 		return(
+			<div>
 			<Nav/>
+			</div>
 		)
 
 
 		// let theUser = this.state.user
 		// //if the type of theUser is an object and there's a length,
-		// //then the user is logged in and can see the user profile + logout link. 
-		// //otherwise it shows the log in / sign up link 
+		// //then the user is logged in and can see the user profile + logout link.
+		// //otherwise it shows the log in / sign up link
 
 		// if (typeof theUser === 'object' && Object.keys(theUser).length > 0) {
 		// 	return (
