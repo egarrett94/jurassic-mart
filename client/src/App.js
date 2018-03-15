@@ -10,8 +10,10 @@ import Login from './Login.js';
 import UserProfile from './UserProfile.js';
 import axios from 'axios';
 import './App.css';
-import Home from "./Home";
-import Products from "./Products";
+import Home from './Home';
+import Products from './Products';
+import Cart from './Cart';
+import Checkout from './Checkout';
 
 class App extends Component {
 
@@ -71,9 +73,18 @@ class App extends Component {
 
 
 		return(
-			<div>
-			<Nav/>
-			</div>
+			<Router>
+				<div>
+					<Nav />
+					<div>
+					    <Route exact path='/' component={Home} />
+					    <Route exact path='/Products' component={Products} />
+					    <Route exact path='/Login' component={Login} />
+					    <Route exact path='/Signup' component={Signup} />
+					    <Route exact path='/Cart' component={Cart} />
+				    </div>
+				</div>
+			</Router>
 		)
 
 
