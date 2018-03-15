@@ -51,6 +51,15 @@ const Products = () => {
 		}
 	]
 
+	const allProducts = productsList.map( (product, index) => 
+		<IndivProduct 
+			key={index}
+			name={product.name}
+			image={product.image}
+			desc={product.desc}
+		 />
+	)
+
 	return(
 		<div>
 			<div class='row'>
@@ -59,7 +68,7 @@ const Products = () => {
 				</div>
 			</div>
 			<div class='row'>
-				<IndivProduct product={productsList}/>
+				{allProducts}
 			</div>
 		</div>
 	)
