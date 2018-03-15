@@ -8,6 +8,11 @@ form {
 	margin: 20px;
 }
 
+h6 {
+	font-size: 16px!important;
+	font-weight: 500;
+}
+
 .opener {
 	margin: 0px auto 30px auto;
 	width: 100%;
@@ -38,6 +43,7 @@ form {
 
 .card-content {
 	overflow: scroll!important;
+	color: grey;
 }
 
 .goldblum {

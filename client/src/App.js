@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {
+	BrowserRouter as Router,
+	Route,
+	Link
+} from 'react-router-dom';
+import Nav from './Nav';
 import Signup from './Signup.js';
 import Login from './Login.js';
 import UserProfile from './UserProfile.js';
@@ -61,24 +67,29 @@ class App extends Component {
 
 	render() {
 
-		let theUser = this.state.user
-		//if the type of theUser is an object and there's a length,
-		//then the user is logged in and can see the user profile + logout link. 
-		//otherwise it shows the log in / sign up link 
-		if (typeof theUser === 'object' && Object.keys(theUser).length > 0) {
-			return (
-				<div>
-					<UserProfile user={this.state.user} logout={this.logout} />
-				</div>
-			)
-		} else {
-			return (
-			  <div className="App">
-			  	<Signup liftToken={this.liftTokenToState}/>
-			  	<Login liftToken={this.liftTokenToState}/>
-			  </div>
-			)
-		}
+		return(
+			<Nav/>
+		)
+
+
+		// let theUser = this.state.user
+		// //if the type of theUser is an object and there's a length,
+		// //then the user is logged in and can see the user profile + logout link. 
+		// //otherwise it shows the log in / sign up link 
+		// if (typeof theUser === 'object' && Object.keys(theUser).length > 0) {
+		// 	return (
+		// 		<div>
+		// 			<UserProfile user={this.state.user} logout={this.logout} />
+		// 		</div>
+		// 	)
+		// } else {
+		// 	return (
+		// 	  <div className="App">
+		// 	  	<Signup liftToken={this.liftTokenToState}/>
+		// 	  	<Login liftToken={this.liftTokenToState}/>
+		// 	  </div>
+		// 	)
+		// }
 	}
 }
 
