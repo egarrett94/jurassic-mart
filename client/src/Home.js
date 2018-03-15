@@ -6,7 +6,7 @@ import Nav from './Nav';
 const Home = () => {
 	return(
 		<div>
-			<Nav/>
+	
 			<div class='opener'>
 				<img class='responsive-img z-depth-5' src='https://wallpapers.walldevil.com/wallpapers/a20/preview/dinosaur-pet-bone-caveman.jpg'/>
 				<div class='row'>

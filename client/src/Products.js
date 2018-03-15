@@ -54,9 +54,9 @@ const Products = () => {
 			price: 7
 		},
 		{
-			name: 'The Refined Canine Outdoor Dog Chaise Lounger',
+			name: 'The Refined Outdoor Dino Chaise Lounger',
 			image: 'https://lh3.googleusercontent.com/proxy/30txdz8Wrf1u649yCtI0vSXsEpXQPeqF2PkonJhdQrZafXc37nAdOea3Mv4SA7oZc9FEQLKQ1J0u0_NJDMLUzw9x-8ZrCr9daY-HyBSWJ2_piisdYpfbxZ-0nCChMyBvozAWjlsXhgSvI5gIW5VVqRq9fDOmknEb2RIQgQm7j9as5m7jHg=s1000-pd-e365-rw-pc0xffffff',
-			desc: 'Perfect for any deck or poolside patio, this outdoor chaise lounger allows your dog to sit comfortably outside. A weatherproof 3-inch outdoor cushion and a waterproof poly rattan construction highlight this dog lounger. The generous polyester fill of the cushion offers added comfort for your canine friends to rest on. The cushion is machine washable for easy cleaning. The espresso design is neutral and attractive, making it versatile enough to pair with most outdoor furniture. The smoke blends with more contemporary patio furniture. The overhang provides added shade on sunny days. Color Options: Espresso, Smoke Materials: Poly rattan Fill type: Polyester Large Dimensions: 28 inches L x 38 inches W x 35.5 inches H (for dogs 30-50 lbs.) X-Large Dimensions: 31.5 inches L 43 inches W x 41 inches H (for dogs 55-75 lbs.) Waterproof Machine washable',
+			desc: 'Perfect for any deck or poolside patio, this outdoor chaise lounger allows your dino to sit comfortably outside. A weatherproof 3-inch outdoor cushion and a waterproof poly rattan construction highlight this dino lounger. The generous polyester fill of the cushion offers added comfort for your canine friends to rest on. The cushion is machine washable for easy cleaning. The espresso design is neutral and attractive, making it versatile enough to pair with most outdoor furniture. The smoke blends with more contemporary patio furniture. The overhang provides added shade on sunny days. Color Options: Espresso, Smoke Materials: Poly rattan Fill type: Polyester Large Dimensions: 28 inches L x 38 inches W x 35.5 inches H (for dinos 30-50 lbs.) X-Large Dimensions: 31.5 inches L 43 inches W x 41 inches H (for dogs 55-75 lbs.) Waterproof Machine washable',
 			price: 250
 		}
 	]
@@ -73,7 +73,6 @@ const Products = () => {
 
 	return(
 		<div>
-		<Nav/>
 			<div class='row'>
 				<div class='col s12 m12 l12'>
 					<br/>
