@@ -2,7 +2,7 @@ import React from 'react';
 
 const Checkout = () => {
 	return(
-		<div>Butts Cart</div>
+		<div>Butts Checkout</div>
 	)
 }
 
