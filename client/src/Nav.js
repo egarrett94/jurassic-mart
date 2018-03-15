@@ -11,8 +11,8 @@ class Nav extends Component {
 	render() {
 		return(
 				<nav>
-			      <div className="nav-wrapper lime darken-3">
-			        <a href="#" className="brand-logo"><img className='jurassic-mart-logo' src={Logo}/></a>
+			      <div className="nav-wrapper orange darken-3">
+			        <a href="/" className="brand-logo"><img className='jurassic-mart-logo' src={Logo}/></a>
 			        <ul id="nav-mobile" className="right hide-on-med-and-down">
 			          <li><Link to='/'>Home</Link></li>
 			          <li><Link to='/Products'>Products</Link></li>

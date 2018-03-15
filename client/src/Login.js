@@ -43,11 +43,13 @@ class Login extends Component {
 	render() {
 
 		return(
-			<form className="login col s6 m6 l6 offset-s3 offset-m3 offset-l3" onSubmit={this.handleSubmit}>
-				Email: <input type='text' value={this.state.email} onChange={this.handleEmailChange} /><br/>
-				Password: <input type='password' value={this.state.password} onChange={this.handlePasswordChange} />
-				<input type='submit' value='Log In!' />
-			</form>
+			<div className='row'>
+				<form className="login col s6 m6 l6 offset-s3 offset-m3 offset-l3" onSubmit={this.handleSubmit}>
+					Email: <input type='text' value={this.state.email} onChange={this.handleEmailChange} /><br/>
+					Password: <input type='password' value={this.state.password} onChange={this.handlePasswordChange} />
+					<input className="waves-effect waves-light btn orange darken-1" type='submit' value='Log In!' />
+				</form>
+			</div>
 		)
 
 	}

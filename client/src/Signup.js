@@ -54,12 +54,14 @@ class Signup extends Component {
 	render() {
 
 		return(
-			<form className="signup" onSubmit={this.handleSubmit}>
-				Name: <input type='text' value={this.state.name} onChange={this.handleNameChange} /><br/>
-				Email: <input type='text' value={this.state.email} onChange={this.handleEmailChange} /><br/>
-				Password: <input type='password' value={this.state.password} onChange={this.handlePasswordChange} />
-				<input type='submit' value='Sign Up!' />
-			</form>
+			<div className='row'>
+				<form className="signup col s6 m6 l6 offset-s3 offset-m3 offset-l3" onSubmit={this.handleSubmit}>
+					Name: <input type='text' value={this.state.name} onChange={this.handleNameChange} /><br/>
+					Email: <input type='text' value={this.state.email} onChange={this.handleEmailChange} /><br/>
+					Password: <input type='password' value={this.state.password} onChange={this.handlePasswordChange} />
+					<input className="waves-effect waves-light btn orange darken-1" type='submit' value='Sign Up!' />
+				</form>
+			</div>
 		)
 
 	}

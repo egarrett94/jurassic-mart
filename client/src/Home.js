@@ -16,7 +16,7 @@ const Home = () => {
 				</div>	
 				<div class='row'>
 					<div class='shop-now col s2 m2 l2 offset-s5 offset-m5 offset-l5'>
-						<a class="waves-effect waves-light btn lime darken-2  z-depth-5">Shop Now</a>
+						<a href='/Products' class="waves-effect waves-light btn orange darken-1 z-depth-5">Shop Now</a>
 					</div>
 				</div>
 			</div>
