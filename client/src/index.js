@@ -6,5 +6,5 @@ import Home from './Home';
 import Products from './Products';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<Products />, document.getElementById('root'));
 registerServiceWorker();
