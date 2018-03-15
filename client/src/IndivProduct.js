@@ -22,4 +22,4 @@ const IndivProduct = () => {
 
 }
 
-export default IndivProduct; 
+export default IndivProduct;
