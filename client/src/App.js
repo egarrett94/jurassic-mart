@@ -81,8 +81,8 @@ class App extends Component {
 					<div>
 					    <Route exact path='/' component={Home} />
 					    <Route exact path='/Products' component={Products} />
-					    <Route exact path='/Login' component={Login liftToken={this.liftTokenToState}} />
-					    <Route exact path='/Signup' component={Signup liftToken={this.liftTokenToState} } />
+					    <Route exact path='/Login' component={Login} />
+					    <Route exact path='/Signup' component={Signup} />
 					    <Route exact path='/Cart' component={Cart} />
 				    </div>
 				</div>
