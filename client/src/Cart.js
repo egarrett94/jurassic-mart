@@ -31,7 +31,7 @@ const Cart = (props) => {
 			<div className='row cart'>
 				<div className='col s6 m6 l6'><div className='row'>{cartItems}</div></div>
 				<div className='col s6 m6 l6 total'>
-					<img className='responsive-img dino' src='https://vignette.wikia.nocookie.net/jurassicfightclub/images/c/cd/Stegosaurus.png/revision/latest?cb=20121003014145' />
+					<img className='responsive-img dino' src='https://cdn.movieweb.com/img.news.tops/NEBOm7qzf4BfEE_1_b/Jurassic-World-2-Jeff-Goldblum-Ian-Malcolm-Dialogue.jpg' />
 					<h1>Total:</h1>
 					<p>{total} pretty rocks</p>
 					<a href='/checkout'>Checkout Now</a> 

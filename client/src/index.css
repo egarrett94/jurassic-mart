@@ -22,6 +22,11 @@ h6 {
 	z-index: -3;
 }
 
+.home-pic {
+	width: 100%;
+	height: auto;
+}
+
 .login, .signup {
 	margin-top: 100px;
 }
