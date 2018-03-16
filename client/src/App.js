@@ -22,12 +22,14 @@ class App extends Component {
 		super(props)
 		this.state = {
 			token: '',
-			user: {}
+			user: {},
+			cartItems: []
 		}
 
 		//binding
 		this.liftTokenToState = this.liftTokenToState.bind(this)
 		this.logout = this.logout.bind(this)
+		this.addCartItem = this.addCartItem.bind(this)
 
 	}
 
@@ -43,6 +45,14 @@ class App extends Component {
 		localStorage.removeItem('mernToken')
 		this.setState({token: '', user: {}})
 	}
+
+	addCartItem(item) {
+		//get the item and add to the state array 
+		// cartItems: [...cartItems, item]
+		console.log("In app addCartItem")
+
+	}
+
 
 	componentDidMount() {
 		//immediately sets token to mernToken if there is one there
@@ -74,20 +84,16 @@ class App extends Component {
 
 
 		return(
-
 			<Router>
 				<div>
-					<Nav />
-					<div>
-					    <Route exact path='/' component={Home} />
-					    <Route exact path='/Products' component={Products} />
-					    <Route exact path='/Login' component={Login liftToken={this.liftTokenToState}} />
-					    <Route exact path='/Signup' component={Signup liftToken={this.liftTokenToState} } />
-					    <Route exact path='/Cart' component={Cart} />
-				    </div>
-				</div>
+					<Nav />	
+				    <Route exact path='/' component={Home} />
+				    <Route exact path='/Products' component={() => <Products onAddCartItem={this.addCartItem}/> } />
+				    <Route exact path='/Login' component={() => <Login />} />
+				    <Route exact path='/Signup' component={Signup} />
+				    <Route exact path='/Cart' component={() => <Cart cartItem={this.state.cartItems} />} />
+			    </div>
 			</Router>
-
 		)
 
 

@@ -40,6 +40,7 @@ h6 {
 	position: absolute;
 	top: 80%;
 	left: 40%;
+	z-index: 10;
 }
 
 .card-title {
@@ -59,6 +60,11 @@ h6 {
 	top: 60px;
 }
 
+.dino {
+	width: 300px;
+	height: auto;
+}
+
 .jurassic-mart-logo {
 	width: 150px!important;
 	height: auto;
@@ -66,9 +72,13 @@ h6 {
 	margin-left: 10px;
 }
 
-.shopkeep-text {
+.shopkeep-text, .total {
 	padding: 20px!important;
-	border-radius: 15px;
+	border-radius: 5px;
 	background-color: rgba(255,255,255,0.5);
 	text-align: center;
+}
+
+.cart {
+	margin-top: 50px;
 }

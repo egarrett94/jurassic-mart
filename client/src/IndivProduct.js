@@ -1,28 +1,25 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class IndivProduct extends Component {
-  render(){
-  	return(
-  		
-          <div class="col s4 m4 l4">
-            <div class="card medium">
-              <div class="card-image">
-                <img src={this.props.image} />
-                <span class="card-title">{this.props.name}</span>
-              </div>
-              <div class="card-content">
-                <h6> Product Description: </h6>
-                <p>{this.props.desc}</p>
-                <p>Price: ${this.props.price}</p>
-              </div>
-              <div class="card-action">
-                <a href="#" value='{this.props.name}'>Add To Cart</a>
-              </div>
-            </div>
-          </div>
-  	)
-  }
+const IndivProduct = (props) => {
 
+  return (
+		<div class="col s4 m4 l4">
+      <div class="card medium">
+        <div class="card-image">
+          <img src={props.image} />
+          <span class="card-title">{props.name}</span>
+        </div>
+        <div class="card-content">
+          <h6> Product Description: </h6>
+          <p>{props.desc}</p>
+          <p>Price: ${props.price}</p>
+        </div>
+        <div class="card-action">
+          <input type='submit' value='Add To Cart' onClick={props.onAddCartItem}/>
+        </div>
+      </div>
+    </div>
+	)
 }
 
 export default IndivProduct;
