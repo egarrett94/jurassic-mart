@@ -23,7 +23,12 @@ class App extends Component {
 		this.state = {
 			token: '',
 			user: {},
-			cartItems: []
+			cartItems: [{
+				name: 'Bone',
+				image: 'https://jonesnaturalchews.com/wp-content/uploads/2017/11/JNC_JumboBone_sw.png',
+				desc: 'A bone.',
+				price: 4
+			}]
 		}
 
 		//binding
@@ -49,7 +54,11 @@ class App extends Component {
 	addCartItem(item) {
 		//get the item and add to the state array 
 		// cartItems: [...cartItems, item]
-		console.log("In app addCartItem")
+		console.log("In app addCartItem, added " + (typeof item))
+		this.setState({
+			cartItems: [...this.state.cartItems, item]
+		})
+		console.log('this is the new array? ' + this.state.cartItems)
 
 	}
 
@@ -81,30 +90,26 @@ class App extends Component {
 	}
 
 	render() {
-
+		// const inCart = this.state.cartItems.map( (product, index) => {
+		// 	return <Cart 
+		// 		key={index}
+		// 		name={product.name}
+		// 		image={product.image}
+		// 		desc={product.desc}
+		// 		price={product.price}
+		// 	 />
+		// })
 
 		return(
 			<Router>
 				<div>
-<<<<<<< HEAD
 					<Nav />	
 				    <Route exact path='/' component={Home} />
 				    <Route exact path='/Products' component={() => <Products onAddCartItem={this.addCartItem}/> } />
 				    <Route exact path='/Login' component={() => <Login />} />
 				    <Route exact path='/Signup' component={Signup} />
-				    <Route exact path='/Cart' component={() => <Cart cartItem={this.state.cartItems} />} />
-			    </div>
-=======
-					<Nav />
-					<div>
-					    <Route exact path='/' component={Home} />
-					    <Route exact path='/Products' component={Products} />
-					    <Route exact path='/Login' component={Login} />
-					    <Route exact path='/Signup' component={Signup} />
-					    <Route exact path='/Cart' component={Cart} />
-				    </div>
+				    <Route exact path='/Cart' component={() => <Cart cartItems={this.state.cartItems} /> } />
 				</div>
->>>>>>> 55cc6fcbac6461425c6f2be15f7fa1ee5a72646d
 			</Router>
 		)
 
