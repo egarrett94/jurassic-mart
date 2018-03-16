@@ -23,12 +23,7 @@ class App extends Component {
 		this.state = {
 			token: '',
 			user: {},
-			cartItems: [{
-				name: 'Bone',
-				image: 'https://jonesnaturalchews.com/wp-content/uploads/2017/11/JNC_JumboBone_sw.png',
-				desc: 'A bone.',
-				price: 4
-			}]
+			cartItems: []
 		}
 
 		//binding
@@ -54,12 +49,9 @@ class App extends Component {
 	addCartItem(item) {
 		//get the item and add to the state array 
 		// cartItems: [...cartItems, item]
-		console.log("In app addCartItem, added " + (typeof item))
 		this.setState({
 			cartItems: [...this.state.cartItems, item]
 		})
-		console.log('this is the new array? ' + this.state.cartItems)
-
 	}
 
 

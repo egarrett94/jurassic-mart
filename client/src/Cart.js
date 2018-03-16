@@ -1,6 +1,14 @@
 import React from 'react';
 
 const Cart = (props) => {
+	// getting price of items from cartItems
+	let itemPrices = props.cartItems.map((item, index) => {
+		return item.price
+	})
+	// summing the totals of the itemPrices
+	let total = itemPrices.reduce((sum, price) => {
+		return sum + price
+	})
 	let cartItems = props.cartItems.map((item, index) => {
 		return (
 			<div key={index} className='col s4 m4 l4 offset-s2 offset-m2 offset-l2'>
@@ -25,8 +33,8 @@ const Cart = (props) => {
 				<div className='col s4 m4 l4 total'>
 					<img className='responsive-img dino' src='https://vignette.wikia.nocookie.net/jurassicfightclub/images/c/cd/Stegosaurus.png/revision/latest?cb=20121003014145' />
 					<h1>Total:</h1>
-					<p>item1.price + item2.price = whatever</p>
-
+					<p>{total}</p>
+					<a href='/checkout'>Checkout Now</a> 
 				</div>
 
 			</div>

@@ -15,7 +15,7 @@ const IndivProduct = (props) => {
           <p>Price: ${props.price}</p>
         </div>
         <div class="card-action">
-          <input type='submit' value='Add To Cart' onClick={props.onAddCartItem}/>
+          <input type='submit' value='Add To Cart' onClick={() => props.onAddCartItem(props.product)}/>
         </div>
       </div>
     </div>
