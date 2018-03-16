@@ -31,8 +31,8 @@ We were offered the topic of "Prehistoric e-Commerce" as our inspiration for thi
 
 We used the user stories as a more finite inspiration for what we should be building and how to do it, so we fleshed out some wireframes as well. 
 
-![img_8820](https://user-images.githubusercontent.com/25888207/37528735-9a7d75f4-28f2-11e8-9353-330dc3fbf4a6.JPG)
-![img_8821](https://user-images.githubusercontent.com/25888207/37528737-9a9008cc-28f2-11e8-9b11-aaa1f254310a.JPG)
+![img_8820](https://user-images.githubusercontent.com/25888207/37531762-4ebbb33a-28fa-11e8-99f2-c1dd49cb9d11.JPG)
+![img_8821](https://user-images.githubusercontent.com/25888207/37531763-4ed793fc-28fa-11e8-8843-baf562d2712e.JPG)
 
 ## Initial Struggles:
 
