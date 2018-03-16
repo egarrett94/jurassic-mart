@@ -47,7 +47,7 @@ class App extends Component {
 	}
 
 	addCartItem(item) {
-		//get the item and add to the state array 
+		//get the item and add to the state array
 		// cartItems: [...cartItems, item]
 		console.log("In app addCartItem")
 
@@ -86,25 +86,15 @@ class App extends Component {
 		return(
 			<Router>
 				<div>
-<<<<<<< HEAD
-					<Nav />	
+
+					<Nav />
 				    <Route exact path='/' component={Home} />
 				    <Route exact path='/Products' component={() => <Products onAddCartItem={this.addCartItem}/> } />
 				    <Route exact path='/Login' component={() => <Login />} />
 				    <Route exact path='/Signup' component={Signup} />
 				    <Route exact path='/Cart' component={() => <Cart cartItem={this.state.cartItems} />} />
 			    </div>
-=======
-					<Nav />
-					<div>
-					    <Route exact path='/' component={Home} />
-					    <Route exact path='/Products' component={Products} />
-					    <Route exact path='/Login' component={Login} />
-					    <Route exact path='/Signup' component={Signup} />
-					    <Route exact path='/Cart' component={Cart} />
-				    </div>
-				</div>
->>>>>>> 55cc6fcbac6461425c6f2be15f7fa1ee5a72646d
+
 			</Router>
 		)
 
