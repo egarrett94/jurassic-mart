@@ -47,7 +47,7 @@ class App extends Component {
 	}
 
 	addCartItem(item) {
-		//get the item and add to the state array 
+		//get the item and add to the state array
 		// cartItems: [...cartItems, item]
 		this.setState({
 			cartItems: [...this.state.cartItems, item]
@@ -95,7 +95,9 @@ class App extends Component {
 		return(
 			<Router>
 				<div>
+
 					<Nav />	
+
 				    <Route exact path='/' component={Home} />
 				    <Route exact path='/Products' component={() => <Products onAddCartItem={this.addCartItem}/> } />
 				    <Route exact path='/Login' component={() => <Login />} />
