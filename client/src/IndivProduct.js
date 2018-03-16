@@ -1,8 +1,12 @@
 import React from 'react';
 
+<<<<<<< HEAD
 
 const IndivProduct = (props) => {
 
+=======
+const IndivProduct = (props) => {
+>>>>>>> 5c360d839becc494626114e410075d9bf1419366
 
   return (
 		<div class="col s4 m4 l4">
@@ -17,7 +21,7 @@ const IndivProduct = (props) => {
           <p>Price: ${props.price}</p>
         </div>
         <div class="card-action">
-          <input type='submit' value='Add To Cart' onClick={props.onAddCartItem}/>
+          <input type='submit' value='Add To Cart' onClick={() => props.onAddCartItem(props.product)}/>
         </div>
       </div>
     </div>

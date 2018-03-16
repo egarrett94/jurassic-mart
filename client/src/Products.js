@@ -67,6 +67,7 @@ class Products extends Component {
 		const allProducts = productsList.map( (product, index) => {
 			return <IndivProduct 
 				key={index}
+				product={product}
 				name={product.name}
 				image={product.image}
 				desc={product.desc}

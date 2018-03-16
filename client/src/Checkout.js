@@ -2,7 +2,7 @@ import React from 'react';
 
 const Checkout = () => {
 	return(
-		<div>Butts Checkout</div>
+		<div><p>We cave people we don't have credit cards silly</p></div>
 	)
 }
 
