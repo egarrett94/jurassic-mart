@@ -1,8 +1,6 @@
 import React from 'react';
 
-
 const IndivProduct = (props) => {
-
 
   return (
 		<div class="col s4 m4 l4">
