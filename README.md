@@ -1,4 +1,5 @@
 ![jurassic-mart](https://user-images.githubusercontent.com/25888207/37524921-9421118e-28e8-11e8-83ef-6e61cc1c132b.png)
+
 Done as a hackathon MERN project in WDI-17 of General Assembly. 
 
 #### Creators: [Emily Garrett](https://github.com/egarrett94) and [Michael Hammer](https://github.com/HamMike/jurassic-mart)
