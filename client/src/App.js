@@ -49,8 +49,9 @@ class App extends Component {
 	addCartItem(item) {
 		//get the item and add to the state array
 		// cartItems: [...cartItems, item]
-		console.log("In app addCartItem")
-
+		this.setState({
+			cartItems: [...this.state.cartItems, item]
+		})
 	}
 
 
@@ -81,20 +82,28 @@ class App extends Component {
 	}
 
 	render() {
-
+		// const inCart = this.state.cartItems.map( (product, index) => {
+		// 	return <Cart 
+		// 		key={index}
+		// 		name={product.name}
+		// 		image={product.image}
+		// 		desc={product.desc}
+		// 		price={product.price}
+		// 	 />
+		// })
 
 		return(
 			<Router>
 				<div>
 
-					<Nav />
+					<Nav />	
+
 				    <Route exact path='/' component={Home} />
 				    <Route exact path='/Products' component={() => <Products onAddCartItem={this.addCartItem}/> } />
 				    <Route exact path='/Login' component={() => <Login />} />
 				    <Route exact path='/Signup' component={Signup} />
-				    <Route exact path='/Cart' component={() => <Cart cartItem={this.state.cartItems} />} />
-			    </div>
-
+				    <Route exact path='/Cart' component={() => <Cart cartItems={this.state.cartItems} /> } />
+				</div>
 			</Router>
 		)
 
