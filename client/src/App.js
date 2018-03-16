@@ -122,6 +122,7 @@ class App extends Component {
 >>>>>>> 5c360d839becc494626114e410075d9bf1419366
 =======
 				    <Route exact path='/Cart' component={() => <Cart cartItems={this.state.cartItems} /> } />
+				    <Route exact path='/Checkout' component={Checkout} />
 				</div>
 >>>>>>> 594d4400573c33c50772d92e59d896861a9853cd
 			</Router>
